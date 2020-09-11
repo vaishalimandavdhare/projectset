@@ -1,0 +1,14 @@
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+	background: url(../images/body-bg.svg) #fff;
+    z-index: 3;
+
+    .container-fluid {
+        @media (min-width:1191px) {
+            padding-left: 2.86rem;
+            padding-right: 2.86rem;
+        }
+    }
+}

@@ -1,0 +1,104 @@
+//
+.common-carousel-slick {
+    margin-bottom: 0 !important;
+    
+    .slick-slide {
+        margin-right: 20px;
+    
+        &:hover,
+        &:focus {
+            outline: none;
+        }
+    }
+
+    .slick-dots {
+        position: static;
+        margin-top: 15px;
+
+        li {
+            button {
+                &:before {
+                    font-size: 40px;                    
+                }
+            }
+        }
+        li.slick-active  {
+            button {
+                &:before {
+                    color: $base-color;
+                }
+            }
+        }
+    }
+}
+
+
+// common-carousel
+.common-carousel {
+    margin: 8.5rem 0 0 0;
+
+    @include breakpoint(desktop-max) {
+        margin: 7.08rem 0 0 0;
+    }
+
+    @include breakpoint(ipad-max) {
+        margin: 5.85rem 0 0 0;
+    }
+
+    @include breakpoint(mobile-max) {
+        margin: 2.86rem 0 0 0;
+    }
+
+    .container {
+        position: relative;
+
+        @include breakpoint(mobile-max) {
+            padding: 0 1.71rem;
+        }
+    }
+
+    &__title {
+        margin-bottom: 4.61rem;
+
+        @include breakpoint(desktop-max) {
+            margin-bottom: 3.84rem;
+        }
+
+        @include breakpoint(ipad-max) {
+            margin-bottom: 3.17rem;
+        }
+
+        @include breakpoint(mobile-max) {
+            margin-bottom: 2.45rem;
+        }
+    }
+
+    &__circle {
+        position: absolute;
+        border-radius: 100%;
+        
+        @include breakpoint(mobile-max) {
+            display: none;
+        }
+        
+        &-1 {
+            top: 0;
+            right: 0;
+            width: 50px;
+            height: 50px;
+            bottom: -8.39rem;
+            opacity: 0.2;
+            border: 1.64rem solid $tertiary-color;
+
+            @include breakpoint(desktop-max) {
+                right: 0;
+                width: 41px;
+                height: 41px;
+                bottom: -6.93rem;
+                opacity: 0.2;
+                border: 1.36rem solid $tertiary-color;
+            }
+        }
+    }
+
+}

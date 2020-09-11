@@ -1,0 +1,253 @@
+// student-hero-banner
+.student-hero-banner {
+    margin-top: 14.99rem;
+    // margin-top: 16.28rem;
+
+    @include breakpoint(ipad-max) {
+        margin-top: 12.48rem;
+    }
+
+    @include breakpoint(mobile-max) {
+        margin-top: 6.35rem;
+    }
+}
+
+// student-virtual-opportunities
+.student-virtual-opportunities {
+    margin-top: 2.53rem;
+
+    @include breakpoint(desktop-max) {
+        margin-top: 2.1rem;
+    }
+
+    @include breakpoint(mobile-max) {
+        margin-top: 3.57rem;
+    }
+}
+
+// student-feature-lists
+.student-feature-lists {
+    &__circle {
+        position: absolute;
+        border-radius: 100%;
+
+        @include breakpoint(mobile-max) {
+            display: none;
+        }
+
+        &-1 {
+            left: 6.11rem;
+            top: 3.25rem;
+            height: 84px;
+            width: 84px;
+            border: 1.64rem solid #FFFFFF;
+            opacity: 0.2;
+
+            @include breakpoint(desktop-max) {
+                left: 5.07rem;
+                top: 2.64rem;
+                height: 69px;
+                width: 69px;
+                border: 1.36rem solid #FFFFFF;
+            }
+
+            @include breakpoint(ipad-max) {
+                left: 4.14rem;
+                top: 2.14rem;
+                height: 57px;
+                width: 57px;
+                border: 1.07rem solid #FFFFFF;
+            }
+        }
+
+        &-2 {
+            position: absolute;
+            right: 4rem;
+            bottom: 4.68rem;
+            border-radius: initial;
+
+            @include breakpoint(desktop-max) {
+                right: 5.27rem;
+                bottom: 3.86rem;
+            }
+
+            @include breakpoint(ipad-max) {
+                right: 4.35rem;
+                bottom: 3.14rem;
+            }
+        }
+    }
+}
+
+// additional-benefits
+.additional-benefits {
+    margin: 6rem 0 0 0;
+    padding: 5.57rem 0 8.39rem 0;
+
+    @include breakpoint(desktop-max) {
+        margin: 4.93rem 0 0 0;
+        padding: 4.63rem 0 6.98rem 0;
+    }
+
+    @include breakpoint(ipad-max) {
+        margin: 4.07rem 0 0 0;
+        padding: 3.83rem 0 5.77rem 0;
+    }
+
+    @include breakpoint(mobile-max) {
+        margin: 3.78rem 0 0 0;
+        padding: 0;
+    }
+
+    .container {
+        @include breakpoint(mobile-max) {
+            padding: 0 1.71rem;
+        }
+    }
+
+    .common-icon-lists {
+        width: 97.69%;
+        margin: 0 auto;
+    }
+
+    &-img {
+        position: relative;
+
+        @include breakpoint(mobile-max) {
+            display: none;
+        }
+
+        img {
+            width: 85.66%;
+            display: block;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+
+            @media (min-width: 837px) and (max-width: 980px) {
+                width: 80%;
+            }
+
+            @media (min-width: 768px) and (max-width: 837px) {
+                width: 95%;
+            }
+        }
+
+        &__circle {
+            position: absolute;
+            border-radius: 100%;
+
+            &-1 {
+                top: -2.57rem;
+                left: 0;
+                right: 0;
+                height: 408px;
+                width: 408px;
+                border: 3.43rem solid $base-color;
+                display: block;
+                margin: 0 auto;
+
+                @include breakpoint(desktop-max) {
+                    top: -2.07rem;
+                    height: 333px;
+                    width: 333px;
+                    border: 2.36rem solid $base-color;
+                }
+
+                @media only screen and (max-width: 991px) {
+                    height: 330px;
+                    width: 330px;
+                }
+
+                @media (min-width: 837px) and (max-width: 980px) {
+                    top: -3.07rem;
+                }
+
+                @media (min-width: 768px) and (max-width: 837px) {
+                    height: 300px;
+                    width: 300px;
+                    top: -1.07rem;
+                }
+            }
+
+            &-2 {
+                right: 4.86rem;
+                top: -6.39rem;
+                height: 38px;
+                width: 38px;
+                border: 1.07rem solid $tertiary-color;
+                opacity: 0.2;
+                background-color: #fff;
+
+                @include breakpoint(desktop-max) {
+                    right: 4rem;
+                    top: -5.28rem;
+                    height: 31px;
+                    width: 31px;
+                    border: 0.86rem solid $tertiary-color;
+                }
+
+                @include breakpoint(mobile-max) {
+                    height: 28.5px;
+                    width: 28.5px;
+                    border: 0.80rem solid $tertiary-color;
+                }
+            }
+
+            &-3 {
+                left: 3.93rem;
+                width: 50px;
+                height: 50px;
+                bottom: -8.39rem;
+                opacity: 0.2;
+                border: 1.64rem solid $tertiary-color;
+
+                @include breakpoint(desktop-max) {
+                    left: 3.21rem;
+                    width: 41px;
+                    height: 41px;
+                    bottom: -6.93rem;
+                    opacity: 0.2;
+                    border: 1.36rem solid $tertiary-color;
+                }
+            }
+        }
+
+    }
+
+    &__main-title {
+        margin: 1.28rem 0 2.86rem 0;
+
+        @include breakpoint(desktop-max) {
+            margin: 1.06rem 0 2.38rem 0;
+        }
+
+        @include breakpoint(ipad-max) {
+            margin: 0.88rem 0 1.96rem 0;
+        }
+
+        @include breakpoint(mobile-max) {
+            margin: 0 0 2.28rem 0;
+        }
+
+    }
+
+
+}
+
+// site-bottom-card
+.students-site-bottom-card {
+    padding: 6.28rem 0;
+    margin: 5.82rem 0 0 0;
+
+    @include breakpoint(mobile-max) {
+        padding: 2.86rem 0 3.43rem 0;
+        margin: 3.71rem 0 0 0;
+    }
+
+    .container {
+        @include breakpoint(mobile-max) {
+            padding: 0 1.71rem;
+        }
+    }
+}

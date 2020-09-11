@@ -1,0 +1,103 @@
+.footer {
+    background-color: $dark-grey-color-4;
+    padding: 2.93rem 0 6.07rem 0;
+
+    @include breakpoint(mobile-max) {
+        padding: 2.71rem 0 4.64rem 0;
+    }
+
+    .container {
+        @include breakpoint(mobile-max) {
+            padding: 0 1.71rem;
+        }
+    }
+
+    &__logo-img {
+        margin-bottom: 2.43rem;
+    }
+
+    &__about-us {
+        width: 49.38%;
+
+        @include breakpoint(mobile-max) {
+            width: 83%;
+        }
+    }
+
+    .text-extra-top {
+        margin-top: 1.43rem;
+    }
+
+
+    &__page-links-lists {
+        display: flex;
+        flex-flow: column;
+
+        &-title {
+            margin-bottom: 0.57rem;
+
+            @include breakpoint(mobile-max) {
+                margin: 2.28rem 0 0.57rem 0;
+            }
+        }
+
+        li {
+            a {
+                transition: 0.3s ease all;
+
+                &:hover,
+                &:focus {
+                    color: $dark-blue-color-1;
+                }
+            }
+        }
+
+        li+li {
+            margin-top: 0.71rem;
+        }
+    }
+
+    &__copyright {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 4.29rem 0 0 0;
+
+        @include breakpoint(mobile-max) {
+            padding: 2.28rem 0 0 0;
+        }
+    }
+
+    &__social-links-lists {
+
+        @include breakpoint(mobile-max) {
+            margin-top: 2.28rem;
+        }
+
+        li {
+            a {
+                font-size: 1.43rem;
+
+                @include breakpoint(ipad-max) {
+                    font-size: 0.98rem;
+                }
+
+                @include breakpoint(mobile-max) {
+                    font-size: 1.43rem;
+                }
+            }
+        }
+
+        li+li {
+            margin-left: 0.86rem;
+
+            @include breakpoint(ipad-max) {
+                margin-left: 0.5rem;
+            }
+
+            @include breakpoint(mobile-max) {
+                margin-left: 0.86rem;
+            }
+        }
+    }
+}

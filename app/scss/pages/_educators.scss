@@ -1,0 +1,126 @@
+// educators-hero-banner
+.educators-hero-banner {
+    margin: 15.21rem 0 0 0;
+
+    @include breakpoint(desktop-max) {
+        margin: 12.66rem 0 0 0;
+    }
+
+    @include breakpoint(ipad-max) {
+        margin: 10.46rem 0 0 0;
+    }
+
+    @include breakpoint(mobile-max) {
+        margin: 6.35rem 0 0 0;
+    }
+
+    .hero-banner-text__title {
+        margin: 1.28rem 0 2.85rem 0;
+
+        @include breakpoint(desktop-max) {
+            margin: 1.07rem 0 2.37rem 0;
+        }
+
+        @include breakpoint(ipad-max) {
+            margin: 0.87rem 0 1.95rem 0;
+        }
+
+        @include breakpoint(mobile-max) {
+            margin: 0 0 2.28rem 0;
+        }
+    }
+}
+
+// educators-virtual-opportunities
+.educators-virtual-opportunities {
+    margin-top: 8.71rem;
+
+    @include breakpoint(desktop-max) {
+        margin-top: 7.25rem;
+    }
+
+    @include breakpoint(ipad-max) {
+        margin-top: 5.99rem;
+    }
+
+    @include breakpoint(ipad-max) {
+        margin-top: 3.57rem;
+    }
+}
+
+// educators-feature-lists
+.educators-feature-lists {
+    &__circle {
+        position: absolute;
+        border-radius: 100%;
+        border: 1.64rem solid #FFFFFF;
+        opacity: 0.2;
+
+        @include breakpoint(desktop-max) {
+            border: 1.36rem solid #FFFFFF;
+        }
+
+        @include breakpoint(ipad-max) {
+            border: 1.12rem solid #FFFFFF;
+        }
+
+        @include breakpoint(mobile-max) {
+            display: none;
+        }
+
+        &-1 {
+            bottom: 0;
+            left: 2rem;
+            height: 101px;
+            width: 101px;
+
+            @include breakpoint(desktop-max) {
+                left: 1.66rem;
+                height: 84px;
+                width: 84px;
+            }
+
+            @include breakpoint(ipad-max) {
+                left: 1.37rem;
+                height: 69px;
+                width: 69px;
+            }
+        }
+
+        &-2 {
+            top: 2.96rem;
+            right: 6rem;
+            height: 60px;
+            width: 60px;
+
+            @include breakpoint(desktop-max) {
+                top: 2.46rem;
+                right: 5.27rem;
+                height: 49px;
+                width: 49px;
+            }
+
+            @include breakpoint(ipad-max) {
+                top: 2.03rem;
+                right: 4.35rem;
+            }
+        }
+    }
+}
+
+// educators-bottom-card
+.educators-site-bottom-card {
+    margin: 6.28rem 0 0 0;
+
+    @include breakpoint(desktop-max) {
+        margin: 5.22rem 0 0 0;
+    }
+
+    @include breakpoint(ipad-max) {
+        margin: 4.31rem 0 0 0;
+    }
+
+    @include breakpoint(mobile-max) {
+        margin: 1.63rem 0 0 0;
+    }
+}

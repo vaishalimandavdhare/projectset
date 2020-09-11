@@ -1,0 +1,124 @@
+// employer-hero-banner
+.employer-hero-banner {
+    margin: 14.35rem 0 0 0;
+
+    @include breakpoint(desktop-max) {
+        margin: 11.95rem 0 0 0;
+    }
+
+    @include breakpoint(ipad-max) {
+        margin: 9.88rem 0 0 0;
+    }
+
+    @include breakpoint(mobile-max) {
+        margin: 6.35rem 0 0 0;
+    }
+
+    .hero-banner-text__title {
+        margin: 5rem 0 1.5rem 0;
+
+        @include breakpoint(desktop-max) {
+            margin: 4.16rem 0 1.5rem 0;
+        }
+
+        @include breakpoint(ipad-max) {
+            margin: 3.44rem 0 1.5rem 0;
+        }
+
+        @include breakpoint(mobile-max) {
+            margin: 0 0 2.28rem 0;
+        }
+    }
+}
+
+// employer-virtual-opportunities
+.employer-virtual-opportunities {
+    margin: 8.5rem 0 0 0;
+
+    @include breakpoint(desktop-max) {
+        margin: 7.08rem 0 0 0;
+    }
+
+    @include breakpoint(ipad-max) {
+        margin: 5.85rem 0 0 0;
+    }
+}
+
+// employer-feature-lists
+.employer-feature-lists {
+    &__circle {
+        position: absolute;
+        border-radius: 100%;
+        border: 1.64rem solid #FFFFFF;
+        opacity: 0.2;
+
+        @include breakpoint(desktop-max) {
+            border: 1.36rem solid #FFFFFF;
+        }
+
+        @include breakpoint(ipad-max) {
+            border: 1.12rem solid #FFFFFF;
+        }
+
+        @include breakpoint(mobile-max) {
+            display: none;
+        }
+
+        &-1 {
+            top: -3.43rem;
+            left: 7.86rem;
+            height: 101px;
+            width: 101px;
+
+            @include breakpoint(desktop-max) {
+                top: -2.85rem;
+                left: 6.54rem;
+                height: 84px;
+                width: 84px;
+            }
+
+            @include breakpoint(ipad-max) {
+                top: -2.35rem;
+                left: 5.40rem;
+                height: 69px;
+                width: 69px;
+            }
+        }
+
+        &-2 {
+            right: 6rem;
+            bottom: 4.68rem;
+            height: 60px;
+            width: 60px;
+
+            @include breakpoint(desktop-max) {
+                right: 5.27rem;
+                bottom: 3.86rem;
+                height: 49px;
+                width: 49px;
+            }
+
+            @include breakpoint(ipad-max) {
+                right: 4.35rem;
+                bottom: 3.14rem;
+            }
+        }
+    }
+}
+
+// employer-bottom-card
+.employer-site-bottom-card {
+    margin: 6.28rem 0 0 0;
+
+    @include breakpoint(desktop-max) {
+        margin: 5.22rem 0 0 0;
+    }
+
+    @include breakpoint(ipad-max) {
+        margin: 4.31rem 0 0 0;
+    }
+
+    @include breakpoint(mobile-max) {
+        margin: 1.63rem 0 0 0;
+    }
+}

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="554" height="389" viewBox="0 0 554 389">
+  <g id="Screens" transform="translate(-33 -24)">
+    <g id="Educator-HD-" transform="translate(-728 -246)">
+      <g id="Hero" transform="translate(124 234)">
+        <g id="Group-2" transform="translate(637 36)">
+          <g id="Rectangle">
+            <path id="Path_3" data-name="Path 3" d="M256,337h41v33.816l81,5.075V389H176V375.891l80-5.075Z"/>
+            <path id="Path_4" data-name="Path 4" d="M295,339v33.7l81,5.074V387H178v-9.232l80-5.074V339Z" fill="#2a2626" stroke="#373737" stroke-width="4" fill-rule="evenodd"/>
+          </g>
+          <g id="Rectangle-2" data-name="Rectangle" transform="translate(554 350) rotate(180)">
+            <path id="Path_5" data-name="Path 5" d="M10,0H544a10,10,0,0,1,10,10V340a10,10,0,0,1-10,10H10A10,10,0,0,1,0,340V10A10,10,0,0,1,10,0Z"/>
+            <path id="Path_6" data-name="Path 6" d="M544,2a8,8,0,0,1,8,8h0V340a8,8,0,0,1-8,8H10a8,8,0,0,1-8-8H2V10a8,8,0,0,1,8-8H544Z" fill="#2a2626" stroke="#373737" stroke-width="4" fill-rule="evenodd"/>
+          </g>
+          <circle id="Oval-Copy-5" cx="6" cy="6" r="6" transform="translate(271 323)" fill="#373737"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

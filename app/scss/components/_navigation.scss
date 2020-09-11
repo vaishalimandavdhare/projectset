@@ -1,0 +1,245 @@
+.navbar {
+    padding: 2rem 0 2rem 0;
+
+    @include breakpoint(desktop-max) {
+        padding: 1.66rem 0 1.66rem 0;
+    }
+
+    @include breakpoint(ipad-max) {
+        padding: 1.37rem 0 1.37rem 0;
+    }
+
+    @include breakpoint(mobile-max) {
+        padding: 1.14rem 0 1.14rem 0;
+    }
+
+    &-brand {
+        padding: 0;
+        margin: 0;
+        z-index: 4;
+
+        &:hover,
+        &:focus {
+            outline: none;
+        }
+
+        svg {
+            height: 34px;
+            width: 158px;
+
+            @include breakpoint(ipad-max) {
+                width: 80%;
+            }
+
+            @include breakpoint(mobile-max) {
+                width: 105px;
+                height: 23px;
+            }
+        }
+    }
+
+    &-brand.acitve {
+        position: fixed;
+        svg {
+            #Group-8 {
+                #Shape,
+                #shape-fill {
+                    fill: #fff;
+                    transition-delay: 0.7s;
+                }
+            }
+        }
+    }
+
+    &-brand-wrap {
+        @include breakpoint(mobile-max) {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    &-nav {
+        align-items: center;
+
+        @include breakpoint(mobile-max) {
+            padding: 0 1.71rem;
+            align-items: flex-start;
+        }
+
+        li+li {
+            @include breakpoint(ipad-min) {
+                margin-left: 1.75rem;
+            }
+
+            @include breakpoint(ipad-max) {
+                margin-left: 1.2rem;
+            }
+
+            @include breakpoint(mobile-max) {
+                margin-left: 0;
+                margin-top: 1.71rem;
+            }
+        }
+    }
+}
+
+.nav-link {
+    color: $base-color;
+    font-weight: 700;
+    letter-spacing: -0.31px;
+    display: inline-block;
+    padding: 0 !important;
+    @include transition();
+
+    @include breakpoint(mobile-max) {
+        color: #fff;
+        font-size: 2.57rem;
+        letter-spacing: -0.43px;
+        line-height: 3rem;
+    }
+
+    &:hover,
+    &:focus {
+        color: $dark-blue-color-1;
+        outline: none;
+    }
+}
+
+.navigation {
+    &-overlay {
+        @include breakpoint(ipad-min) {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            padding: 0.78rem 0 0 0;
+        }
+
+        @include breakpoint(mobile-max) {
+            height: 0%;
+            width: 100%;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: $dark-blue-color-2;
+            overflow-y: hidden;
+            transition: 0.5s ease-in-out all;
+            z-index: 2;
+        }
+
+        &__content {
+            @include breakpoint(mobile-max) {
+                position: relative;
+                top: 0;
+                width: 100%;
+                margin-top: 7.14rem;
+            }
+        }
+    }
+
+    &-links-wrap {
+        display: flex;
+        flex-flow: row;
+
+        @include breakpoint(mobile-max) {
+            height: 100%;
+            flex-flow: column;
+            justify-content: space-between;
+        }
+
+        &__btn-links {
+            @include breakpoint(mobile-max) {
+                padding: 0 1.71rem 2.86rem 1.71rem;
+            }
+
+            li {
+
+                @include breakpoint(mobile-max) {
+                    width: 100%;
+                }
+
+                .signup-btn,
+                .login-btn {
+                    @include breakpoint(mobile-max) {
+                        width: 100%;
+                        padding: 0.85rem 1.35rem;
+                        margin: 0 auto;
+                        transition-delay: 0.5s;
+                    }
+            
+                }
+            
+                .signup-btn {
+                    @include breakpoint(ipad-min) {
+                        margin-left: 2.85rem;
+                    }
+            
+                    @include breakpoint(ipad-max) {
+                        margin-left: 1.96rem;
+                    }
+            
+                    @include breakpoint(mobile-max) {
+                        bottom: 7.36rem;
+                        margin-left: auto;
+                    }
+                }
+            
+                .login-btn {
+                    @include breakpoint(ipad-min) {
+                        margin-left: 1.14rem;
+                    }
+            
+                    @include breakpoint(ipad-max) {
+                        margin-left: 0.78rem;
+                    }
+            
+                    @include breakpoint(mobile-max) {
+                        bottom: 2.86rem;
+                        margin-left: auto;
+                    }
+                }
+
+                &:first-child {
+                    @include breakpoint(mobile-max) {
+                        padding-top: 2.32rem;
+                        border-top: 4px solid #18009E;
+                    }
+                }
+            }
+
+            li + li {
+                @include breakpoint(mobile-max) {
+                    margin-top: 1.14rem;
+                }
+            }
+        }
+    }
+}
+
+.toggle-btn,
+.close-btn {
+    [class^="icon-"] {
+        &::before {
+            color: $base-color;
+            font-size: 1.43rem;
+        }
+    }
+
+    @include breakpoint(ipad-min) {
+        display: none;
+    }
+}
+
+.close-btn {
+    position: absolute;
+    top: 1.14rem;
+    right: 1.14rem;
+    z-index: 2;
+
+    [class^="icon-"] {
+        &::before {
+            color: #fff;
+        }
+    }
+}

@@ -1,0 +1,179 @@
+// number-lists
+.number-lists {
+    justify-content: space-between;
+    counter-reset: counter-list-style-1;
+
+    @include breakpoint(mobile-max) {
+        justify-content: flex-end;
+    }
+
+    &--with-three-col {
+        width: 77%;
+        margin: 0 auto;
+
+        @include breakpoint(mobile-max) {
+            width: 100%;
+        }
+
+        li {
+            width: 19%;
+    
+            @include breakpoint(mobile-max) {
+                width: 73%;
+            }
+        }
+    }
+
+    &--with-four-col {
+        li {
+            width: 15.59%;
+  
+            @include breakpoint(mobile-max) {
+                width: 73%;
+            }
+            
+            &:nth-child(3) {
+                @include breakpoint(desktop-min) {
+                    margin-left: 8rem;
+                }
+            }
+        }
+    }
+    
+    &--style-1 {
+        li {
+            color: #fff;
+            
+            &:before {
+                color: $light-blue-color-2;
+            }
+        }        
+    }
+
+    &--style-2 {
+        li {
+            color: $dark-grey-color-1;
+
+            &:before {
+                color: $dark-blue-color-1;
+            }
+        }        
+    }
+
+    &__title {
+        line-height: 2rem;
+        font-weight: 700;
+        margin: 0;
+
+        @include breakpoint(mobile-max) {
+            font-size: 1.43rem;
+            letter-spacing: 0;
+            line-height: 2rem;
+        }
+
+        @include breakpoint(desktop-max) {
+            letter-spacing: -0.17px;
+            line-height: 1.28rem;      
+        }
+    
+        @include breakpoint(mobile-max) {
+            letter-spacing: 0;
+            line-height: 2rem;
+        }
+    }
+
+    p {
+        margin: 0;
+        letter-spacing: 0.17px;
+        line-height: 1.43rem;
+
+        @include breakpoint(desktop-max) {
+            line-height: 1.07rem;
+        }
+    
+        @include breakpoint(mobile-max) {
+            letter-spacing: -0.17px;
+            line-height: 1.57rem;
+        }
+    }
+
+    li {
+        height: 100%;
+        position: relative;
+        border-left: 0.35rem solid #fff;
+        padding-left: 1.64rem;
+        margin-right: 1rem;
+        padding-bottom: 2px;
+        margin-left: 5.4rem;
+        
+        @include breakpoint(desktop-max) {
+            margin-left: 4.5rem;
+            padding-left: 1.36rem;
+        }
+
+        @include breakpoint(ipad-max) {
+            margin-right: 0;
+            padding-left: 1.12rem;
+        }
+
+        @include breakpoint(mobile-max) {
+            margin-left: 5.85rem;
+        }
+
+        &:before {
+            position: absolute;
+            left: -5.85rem;
+            font-size: 5.85rem;
+            font-weight: 700;
+            letter-spacing: -0.98px;
+            line-height: 3.42rem;
+            min-width: 50px;
+            text-align: right;
+            counter-increment: counter-list-style-1;
+            content: counter(counter-list-style-1);
+
+            @include breakpoint(desktop-max) {
+                min-width: 46px;
+                left: -4.87rem;
+                font-size: 4.87rem;
+                line-height: 2.84rem;
+            }
+
+            @include breakpoint(ipad-max) {
+                min-width: 32px;
+                left: -4.03rem;
+                font-size: 4.03rem;
+                line-height: 2.35rem;
+            }
+
+            @include breakpoint(mobile-max) {
+                min-width: 56px;
+                left: -5.85rem;
+                font-size: 5.85rem;
+                letter-spacing: -0.98px;
+                line-height: 3.42rem;                
+            }
+        }
+
+        // &:after {
+        //     content: '';
+        //     position: absolute;
+        //     top: 0;
+        //     left: 0;
+        //     width: 4px;
+        //     height: 100%;
+        //     background-color: #fff;
+        //     // border-left: 0.35rem solid #fff;
+        // }
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    li + li {
+        @include breakpoint(mobile-max) {
+            margin-top: 3.43rem;
+        }
+    }
+}

@@ -1,0 +1,144 @@
+.common-card {
+    &-wrap {
+        justify-content: space-between;
+
+        li + li {
+            @include breakpoint(mobile-max) {
+                margin-top: 1.71rem;
+            }
+        }
+    }
+
+    &--two-col {
+        .common-card--style-1 {
+            width: 48.71%;
+        }
+    }
+
+    &--three-col {
+        .common-card--style-1 {
+            width: 31.61%;
+        }
+    }
+
+    &--four-col {
+        .common-card--style-1 {
+            width: 23.06%;
+        }
+    }
+
+    &--two-col,
+    &--three-col,
+    &--four-col {
+        .common-card--style-1 {
+
+            @include breakpoint(mobile-max) {
+                width: 100%;
+            }
+        }
+    }
+
+    &--style-1 {
+        background-color: #FFFFFF;
+        border-radius: 0.57rem;
+        box-shadow: 0 12px 24px -7px rgba(0,0,0,0.5);
+        padding: 1.71rem 0 1.71rem 2.28rem;
+        border-left: 0.57rem solid $base-color;
+        transition: .5s ease all;
+
+        @include breakpoint(desktop-max) {
+            padding: 1.42rem 1.89rem;
+        }
+
+        @include breakpoint(ipad-max) {
+            padding: 1.1rem 1.46rem;
+        }
+
+        @include breakpoint(mobile-max) {
+            padding: 1.71rem;
+        }
+
+        &:hover,
+        &:focus {
+            cursor: pointer;
+            background-color: $dark-blue-color-1;
+            border-color: $dark-blue-color-1;
+            
+            a {
+                color: #fff;
+
+                p {
+                    color: #fff;
+                }
+            }
+        }
+
+        a {
+            color: $base-color;
+            display: block;
+        }
+
+        &__icons {
+            margin-bottom: 0.86rem;
+            
+            [class^="icon-"], [class*=" icon-"] {
+                display: block;
+
+                &:before {
+                    font-size: 5.72rem;
+
+                    @include breakpoint(desktop-max) {
+                        font-size: 4.76rem;
+                    }
+
+                    @include breakpoint(ipad-max) {
+                        font-size: 3.68rem;
+                    }
+
+                    @include breakpoint(mobile-max) {
+                        font-size: 4.28rem;
+                    }
+                }
+            }
+        }
+
+        &__title {
+            margin: 0;
+            transition: .5s ease all;
+            
+
+            @include breakpoint(desktop-max) {
+                font-size: 1.54rem;
+                line-height: 1.91rem;
+            }
+
+            @include breakpoint(ipad-max) {
+                font-size: 1.19rem;
+                line-height: 1.48rem;
+            }
+            
+            @include breakpoint(mobile-max) {
+                font-size: 1.43rem;
+                letter-spacing: -0.24px;
+                line-height: 1.86rem;
+            }
+        }
+
+        &__text {
+            width: 50%;
+            color: $dark-grey-color-1;
+            margin: 0.86rem 0 0 0;
+            line-height: 1.43rem;
+            transition: .5s ease all;
+
+            @include breakpoint(desktop-max) {
+                line-height: 1.19rem;
+            }
+
+            @include breakpoint(mobile-max) {
+                width: 90%;
+                line-height: 1.43rem;
+            }
+        }
+    }
+}

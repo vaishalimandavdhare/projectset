@@ -1,0 +1,8 @@
+<svg id="Group-4" xmlns="http://www.w3.org/2000/svg" width="287" height="553" viewBox="0 0 287 553">
+  <g id="Rectangle" transform="translate(420 133) rotate(90)">
+    <path id="Path_1" data-name="Path 1" d="M-113,133H400a20,20,0,0,1,20,20V400a20,20,0,0,1-20,20H-113a20,20,0,0,1-20-20V153A20,20,0,0,1-113,133Z"/>
+    <path id="Path_2" data-name="Path 2" d="M400,135a18,18,0,0,1,18,18h0V400a18,18,0,0,1-18,18H-113a17.944,17.944,0,0,1-12.728-5.272A17.944,17.944,0,0,1-131,400h0V153a17.944,17.944,0,0,1,5.272-12.728A17.944,17.944,0,0,1-113,135H400Z" fill="#2a2626" stroke="#373737" stroke-width="4" fill-rule="evenodd"/>
+  </g>
+  <circle id="Oval" cx="18.5" cy="18.5" r="18.5" transform="translate(126 500)" fill="#373737"/>
+  <path id="Rectangle-2" data-name="Rectangle" d="M98,26h91v7H98Z" fill="#373737" fill-rule="evenodd"/>
+</svg>

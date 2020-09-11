@@ -1,0 +1,10 @@
+.container {
+    max-width: $container-width;
+    &--md {
+        max-width: $container-md-width;
+    }
+}
+
+// .main {
+//     padding: 120px 0 0 0;
+// }
